@@ -19,7 +19,8 @@ class Gun : Weapon
         Console.WriteLine("Piv");
     }
 }
-
+`
+`
 class Knife : Weapon
 {
     public override void Invoke()
@@ -27,7 +28,8 @@ class Knife : Weapon
         Console.WriteLine("Vjuh");
     }
 }
-
+`
+`
 class Rifle : Weapon
 {
     public override void Invoke()
@@ -36,3 +38,4 @@ class Rifle : Weapon
     }
 }
 `
+
