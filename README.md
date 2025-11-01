@@ -2,15 +2,15 @@
 Цей приклад демонструє застосування OCP у C# на прикладі ієрархії зброї.
 
 ---
-
-code:
-
+#Абстрактний клас Weapon визначає метод Invoke(), який має бути реалізований у всіх класах-нащадках.
 ```csharp
 abstract class Weapon
 {
     public abstract void Invoke();
 }
-
+'''
+---
+---
 class Gun : Weapon
 {
     public override void Invoke()
