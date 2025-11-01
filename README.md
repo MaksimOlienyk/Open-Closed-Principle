@@ -20,20 +20,14 @@
 Кожен конкретний вид зброї реалізує цей метод по-своєму.
 
 ```csharp
-abstract class Weapon
-{
-    public abstract void Invoke();
-}
 
-
-```cs
-//Абстрактний клас Weapon визначає метод Invoke(), який має бути реалізований у всіх класах-нащадках.
+##Абстрактний клас Weapon визначає метод Invoke(), який має бути реалізований у всіх класах-нащадках.
 abstract class Weapon
 {
     public abstract void Invoke(); 
 }
 
-//Наслідники Weapon які реалізовують Invoke();
+##Наслідники Weapon які реалізовують Invoke();
 class Gun : Weapon
 {
     public override void Invoke()
@@ -57,8 +51,8 @@ class Rifle : Weapon
         // Логіка стрільби
     }
 }
-## Таке рішення дозволяє розширити функціонал та змінити поведінку без зміни в існуючому класі Weapon
-/*Пркилад використання
+
+##Пркилад використання
 Weapon gun = new Gun();
 Weapon knife = new Knife();
 Weapon rifle = new Rifle();
@@ -66,6 +60,6 @@ Weapon rifle = new Rifle();
 gun.Invoke();   // Piv
 knife.Invoke(); // Vjuh
 rifle.Invoke(); // (Логіка стрільби) 
-*/
 
+## Таке рішення дозволяє розширити функціонал та змінити поведінку без зміни в існуючому класі Weapon
 
